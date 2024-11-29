@@ -22,10 +22,10 @@ const Games = () => {
 
     const handleKeyPress = useCallback((e) => {
         if (gameOver || !gameStarted) return; // Disable controls when game is over or not started
-    
+
         // Prevent default browser behavior (e.g., scrolling or cursor movement)
         e.preventDefault();
-    
+
         if (e.key === 'ArrowUp' && direction !== 'DOWN') {
             setDirection('UP');
         } else if (e.key === 'ArrowDown' && direction !== 'UP') {
@@ -36,6 +36,20 @@ const Games = () => {
             setDirection('RIGHT');
         }
     }, [direction, gameOver, gameStarted]);
+
+    const handleTouchDirection = (newDirection) => {
+        if (gameOver || !gameStarted) return;
+    
+        if (newDirection === 'UP' && direction !== 'DOWN') {
+            setDirection('UP');
+        } else if (newDirection === 'DOWN' && direction !== 'UP') {
+            setDirection('DOWN');
+        } else if (newDirection === 'LEFT' && direction !== 'RIGHT') {
+            setDirection('LEFT');
+        } else if (newDirection === 'RIGHT' && direction !== 'LEFT') {
+            setDirection('RIGHT');
+        }
+    };
     
     // Move the snake
     const moveSnake = useCallback(() => {
@@ -161,16 +175,25 @@ const Games = () => {
             </div>
             <div className='gameButonContainer'>
                 {!gameStarted && !gameOver && (
-                    <button  className="btn btn-success" onClick={() => setGameStarted(true)}>Start Game</button>
+                    <button className="btn btn-success" onClick={() => setGameStarted(true)}>Start Game</button>
                 )}
                 {gameStarted && !gameOver && (
-                    <button  className="btn btn-warning" onClick={handlePauseResume}>Pause</button>
+                    <button className="btn btn-warning" onClick={handlePauseResume}>Pause</button>
                 )}
                 {gameOver && <button className="btn btn-info" onClick={restartGame}>Restart</button>}
                 <p>Score: {score}</p>
                 <p>High Score: {highScore}</p>
                 {gameOver && <p>Game Over! You hit the wall or yourself!</p>}
             </div>
+            <div className='touchControls'>
+    <button className="btn btn-primary" onClick={() => handleTouchDirection('UP')}>⬆️</button>
+    <div>
+        <button className="btn btn-primary" onClick={() => handleTouchDirection('LEFT')}>⬅️</button>
+        <button className="btn btn-primary" onClick={() => handleTouchDirection('RIGHT')}>➡️</button>
+    </div>
+    <button className="btn btn-primary" onClick={() => handleTouchDirection('DOWN')}>⬇️</button>
+</div>
+
         </div>
     );
 };
