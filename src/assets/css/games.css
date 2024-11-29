@@ -1,0 +1,68 @@
+/* Games.css */
+
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  /* Grid Cell Styling */
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Snake Styling */
+  .snake {
+    background-color: #28a745; /* Green Snake */
+    border-radius: 50%;
+  }
+  
+  /* Food Styling */
+  .food {
+    background-color: red; /* Red Food */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for Game Over */
+  .game-over-message {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  /* Score Box Styling */
+  .score-container {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .gameButonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .gameMainContainer {
+    padding: 40px;
+    background-color: #f0f0f0;
+    /* position: absolute; */
+    width: 100%;
+  }

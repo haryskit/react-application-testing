@@ -1,0 +1,19 @@
+.home-section {
+    text-align: center;
+    padding: 20px;
+  }
+  .carousel-item {
+    padding: 10px;
+  }
+  .carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: 350px;
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slick-prev, .slick-next {
+    color: black; /* Custom arrow color */
+  }
+  

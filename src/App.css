@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+.AppBodyMail{
+  min-height: 550px;
+}
