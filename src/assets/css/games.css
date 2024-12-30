@@ -56,7 +56,7 @@ button:hover {
   color: #333;
 }
 
-.gameButonContainer {
+.gameButtonContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;

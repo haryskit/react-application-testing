@@ -5,6 +5,7 @@ import {
     faHomeAlt,
     faUserGroup,
     faGamepad,
+    faRobot,
 } 
 from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -55,6 +56,11 @@ class Header extends React.Component {
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/games">
                                             <FontAwesomeIcon icon={faGamepad} /> <span>Games</span>
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/tetris">
+                                            <FontAwesomeIcon icon={faRobot} /> <span>Tetris</span>
                                         </Link>
                                     </li>
 

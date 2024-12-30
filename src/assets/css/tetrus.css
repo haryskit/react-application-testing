@@ -1,0 +1,106 @@
+/* General Layout */
+#tetris-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1d2733;
+    /* Matches the background in the image */
+    color: #fff;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(20, 30px);
+    border: 3px solid #555;
+    background-color: #111;
+}
+
+.game-grid .cell {
+    width: 30px;
+    height: 30px;
+    background-color: #1d2733;
+    border: 1px solid #333;
+}
+
+.game-grid .cell.filled {
+    background-color: #4ecdc4;
+    /* Example color for blocks */
+}
+
+/* Sidebar */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+}
+
+.sidebar-section {
+    background-color: #2a3948;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-section h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.stats p {
+    margin: 5px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-block,
+.swap-block {
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    grid-template-rows: repeat(4, 30px);
+    gap: 1px;
+}
+
+.next-block .cell,
+.swap-block .cell {
+    width: 30px;
+    height: 30px;
+    background-color: #1d2733;
+    border: 1px solid #333;
+}
+
+.next-block .cell.filled,
+.swap-block .cell.filled {
+    background-color: #f4a261;
+    /* Example color for next/swap blocks */
+}
+
+/* Controls */
+.controls {
+    background-color: #2a3948;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.controls p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(20, 30px);
+    border: 3px solid #555;
+    background-color: #111;
+}
