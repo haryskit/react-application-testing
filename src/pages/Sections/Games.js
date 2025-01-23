@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import '../assets/css/games.css';
+import '../../assets/css/games.css';
 
 const Games = () => {
     const gridSize = 20; // Grid size

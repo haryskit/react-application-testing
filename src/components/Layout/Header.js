@@ -43,32 +43,6 @@ class Header extends React.Component {
                                             <FontAwesomeIcon icon={faHomeAlt} />  <span>Home</span>
                                         </Link>
                                     </li>
-                                    {/* <li className="nav-item">
-                                        <Link className="nav-link" to="/about">
-                                            <FontAwesomeIcon icon={faUserGroup} /> <span>About Us</span>
-                                        </Link>
-                                    </li> */}
-                                    {/* <li className="nav-item">
-                                        <Link className="nav-link" to="/contact">
-                                            <FontAwesomeIcon icon={faGlobe} /> <span>Contact Us</span>
-                                        </Link>
-                                    </li> */}
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to="/games">
-                                            <FontAwesomeIcon icon={faGamepad} /> <span>Games</span>
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to="/tetris">
-                                            <FontAwesomeIcon icon={faRobot} /> <span>Tetris</span>
-                                        </Link>
-                                    </li>
-
-                                    {/* <li className="nav-item">
-                <Link className="nav-link" to="/movies">
-                  Movies
-                </Link>
-              </li> */}
                                 </ul>
                             </div>
                         </div>

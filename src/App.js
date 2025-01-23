@@ -1,13 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 
 // Pages
-import Home from './pages/Home'; // Ensure correct paths
-import Contact from './pages/Contact';
-import Movies from './pages/Movies';
-import MoviePage from './pages/MoviePage';
-import About from './pages/About';
-import Games from './pages/Games';
-import Tetris from './pages/Tetris';
+import Home from './pages/Home';
+import Games from './pages/Sections/Games';
 
 // Layout Components
 import Header from './components/Layout/Header';
@@ -23,12 +18,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/movies" element={<Movies />} />
-          <Route path="/movie/:movieId" element={<MoviePage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/games" element={<Games />} />
-          <Route path="/tetris" element={<Tetris />} />
         </Routes>
       </main>
 
