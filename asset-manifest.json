@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-application-testing/static/css/main.ab7bfe93.css",
-    "main.js": "/react-application-testing/static/js/main.c22c35d3.js",
+    "main.css": "/react-application-testing/static/css/main.e9cd8d06.css",
+    "main.js": "/react-application-testing/static/js/main.792d0acf.js",
     "static/media/mainlogo.png": "/react-application-testing/static/media/mainlogo.aa9d829d8427ec5bdde3.png",
     "static/media/slick.svg": "/react-application-testing/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/react-application-testing/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/react-application-testing/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/react-application-testing/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-application-testing/index.html",
-    "main.ab7bfe93.css.map": "/react-application-testing/static/css/main.ab7bfe93.css.map",
-    "main.c22c35d3.js.map": "/react-application-testing/static/js/main.c22c35d3.js.map"
+    "main.e9cd8d06.css.map": "/react-application-testing/static/css/main.e9cd8d06.css.map",
+    "main.792d0acf.js.map": "/react-application-testing/static/js/main.792d0acf.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab7bfe93.css",
-    "static/js/main.c22c35d3.js"
+    "static/css/main.e9cd8d06.css",
+    "static/js/main.792d0acf.js"
   ]
 }
